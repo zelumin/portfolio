@@ -1,0 +1,90 @@
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fdfcf7;
+      overflow-x: hidden;
+      color: #2f2f2f;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      z-index: 2;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #4a7c59;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    nav a:hover { /*Keeping just black for now; but might need to consider like, color gradients or whanto*/
+      color: black;
+    }
+
+    .banner {
+      position: relative;
+      height: 100vh;
+      /* display: flex; */
+      align-items: flex-start;
+      padding-top: 60px; /*60 px's is safe, 150px's is ideal!*/
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .banner-content {
+      position: relative;
+      z-index: 2;
+      
+      margin-left: 140px;
+      padding-right: 150px;
+    }
+
+    .banner h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .banner p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+
+    .slash {
+      position: absolute;
+      color: rgba(120, 180, 120, 0.25);
+      animation: float 12s infinite ease-in-out;
+      user-select: none;
+      z-index: 1;
+    }
+
+    @keyframes float {
+      0% { transform: translate(0,0) rotate(0deg); }
+      25% { transform: translate(10px,-20px) rotate(90deg); }
+      50% { transform: translate(-10px,10px) rotate(180deg); }
+      75% { transform: translate(6px,-10px) rotate(270deg); }
+      100% { transform: translate(0,0) rotate(360deg); }
+    }
+
+   
+   
+   
+   footer {
+      font-size: 1.40rem;
+      gap: 25px;
+    }
+
+    footer a {
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }

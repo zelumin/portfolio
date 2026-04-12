@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gavin's Portfolio</title>
+  <link rel="icon" type="image/png" href="./imgs/icon.png">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script src="./scripts/index.js" defer></script>
+  <style>
+    .side-strip {
+      position: fixed;
+      width: 80px;
+      height: 100vh;
+      background: linear-gradient(
+        to bottom,
+        rgba(152, 251, 152, 0.3),
+        rgba(152, 251, 152, 0.05)
+      );
+      left: 0;
+      top: 0;
+      z-index: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="./index.html">Home</a>
+    <a href="./subpages/about.html">About</a>
+    <a href="./subpages/experience.html">Experience</a>
+    <a href="./subpages/projects.html">Projects</a>
+    <a href="./subpages/contact.html">Contact</a>
+  </nav>
+
+  <section class="banner">
+    <div class="side-strip"></div>
+
+    <img src="./imgs/icon.png" style="width:275px; border-radius: 50%; overflow: hidden;" alt="anime-styled girl with green hair"> <!--I WILL NEED TO MAKE THE IMAGE 1/1-->
+    <div class="banner-content">
+      <h1>Gavin's Portfolio</h1>
+      <p>Computer Science Student at Colorado State University</p>
+      <p></p>
+
+      <!-- <img src="./imgs/icon.png" style="width: 150px; display: block;"> -->
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Gavin</p>
+    <div class="foot-links">
+      <a href="mailto:scaklaus@colostate.edu">Email</a>
+      <a href="https://github.com/zelumin">GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>
