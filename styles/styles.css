@@ -59,32 +59,63 @@
       color: rgba(120, 180, 120, 0.25);
       animation: float 12s infinite ease-in-out;
       user-select: none;
-      z-index: 1;
+      z-index: 3;
     }
 
-    @keyframes float {
-      0% { transform: translate(0,0) rotate(0deg); }
-      25% { transform: translate(10px,-20px) rotate(90deg); }
-      50% { transform: translate(-10px,10px) rotate(180deg); }
-      75% { transform: translate(6px,-10px) rotate(270deg); }
-      100% { transform: translate(0,0) rotate(360deg); }
-    }
+@keyframes float {
+  0% { transform: translate(0,0) rotate(0deg); }
+  25% { transform: translate(10px,-20px) rotate(90deg); }
+  50% { transform: translate(-10px,10px) rotate(180deg); }
+  75% { transform: translate(6px,-10px) rotate(270deg); }
+  100% { transform: translate(0,0) rotate(360deg); }
+}
 
+.box {
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background: 
+  linear-gradient(#fdfcf7, #fdfcf7) padding-box,
+  linear-gradient(135deg, #98fb98, #4a7c59) border-box;
+}
    
-   
-   
-   footer {
-      font-size: 1.40rem;
-      gap: 25px;
-    }
+footer {
+  font-size: 1.40rem;
+  gap: 25px;
+}
 
-    footer a {
-      text-decoration: none;
-      margin-right: 20px;
-    }
+footer a {
+  text-decoration: none;
+  margin-right: 20px;
+}
 
-    .footer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.skills {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.skills h2 {
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skills-list span {
+  padding: 8px 14px;
+  border: 1px solid rgba(74, 124, 89, 0.4);
+  border-radius: 12px;
+  background: rgba(152, 251, 152, 0.1);
+  font-size: 0.95rem;
+}
