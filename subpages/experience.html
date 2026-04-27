@@ -6,8 +6,57 @@
   <title>Gavin's Portfolio</title>
   <link rel="stylesheet" href="../styles/styles.css">
   <script src="../scripts/index.js" defer></script>
+  <style>
+    .experience-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .experience-card {
+      background: white;
+      border: 1px solid rgba(74, 124, 89, 0.2);
+      border-radius: 18px;
+      padding: 2rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+    }
+
+    .experience-card h2 {
+      margin-top: 0;
+      color: #2f2f2f;
+    }
+
+    .experience-card p {
+      line-height: 1.7;
+      margin-bottom: 0.8rem;
+    }
+
+    .resume-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 12px 22px;
+      border-radius: 10px;
+      background: #4a7c59;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .resume-button:hover {
+      background: black;
+    }
+  </style>
 </head>
 <body>
+
+  <header class="site-header">
+    <h1>Gavin</h1>
+    <p>Computer Science Student • Software Engineer</p>
+  </header>
+
   <nav>
     <a href="../index.html">Home</a>
     <a href="./about.html">About</a>
@@ -19,8 +68,39 @@
   <section class="banner">
 
     <div class="banner-content">
-      <!-- I WILL PUT CONTENT HERE; it will need to be in individual containers -->
-    </div>
+      <section class="experience-container">
+
+        <div class="experience-card">
+          <h2>Education</h2>
+          <p><strong>Colorado State University</strong></p>
+          <p>B.S. in Computer Science</p>
+          <p>Expected Graduation: 2026</p>
+          <a href="#" class="resume-button" target="_blank" rel="noopener noreferrer">
+            View Resume
+          </a>
+        </div>
+
+        <div class="experience-card">
+          <h2>Relevant Experience</h2>
+          <p><strong>Company Management System – CS415</strong></p>
+          <p>
+            Developed a full-stack company management application using
+            Java, React, REST APIs, and software testing practices.
+            Implemented worker, project, and qualification management
+            with validation, endpoint testing, and frontend integration.
+          </p>
+        </div>
+
+        <div class="experience-card">
+          <h2>Relevant Coursework</h2>
+          <p>
+            Data Structures, Algorithms, Software Testing,
+            Computer Networks, Cybersecurity Fundamentals,
+            Object-Oriented Programming, Discrete Mathematics
+          </p>
+        </div>
+      </section>    
+  </div>
   </section>
 
   <footer class="footer">
@@ -28,7 +108,7 @@
     <div class="foot-links">
       <a href="mailto:scaklaus@colostate.edu">Email</a>
       <a href="https://github.com/zelumin">GitHub</a>
-      <!-- <a href="">LinkedIn</a> dont really want my linkedin here so... -->
+      <a href="https://www.linkedin.com/in/gavin-wyatt/">LinkedIn</a>
     </div>
   </footer>
 </body>

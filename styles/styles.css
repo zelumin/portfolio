@@ -119,3 +119,20 @@ footer a {
   background: rgba(152, 251, 152, 0.1);
   font-size: 0.95rem;
 }
+
+.site-header {
+  text-align: center;
+  padding: 1.5rem 1rem 0.5rem;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #2f2f2f;
+}
+
+.site-header p {
+  margin: 0.5rem 0 0;
+  color: #000000;
+  font-size: 1rem;
+}
